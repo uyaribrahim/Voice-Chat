@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.SearchUserFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/inputSearch"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_border_edittext"
+                android:drawableStart="@drawable/ic_baseline_search_24"
+                android:drawablePadding="6dp"
+                android:focusable="true"
+                android:fontFamily="@font/boogaloo"
+                android:hint="Ara"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/usersLoadingProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputSearch"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:visibility="gone"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/usersRecyclerView"
+                android:layout_width="340dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/inputSearch"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <ImageView
+                android:id="@+id/searchImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputSearch"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/searchpic" />
+
+        </RelativeLayout>
+
+
+
+
+    </FrameLayout>
+
+
+</layout>
