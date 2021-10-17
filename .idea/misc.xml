@@ -14,19 +14,20 @@
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1296875" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/drawable/ic_person.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/drawable/round_border_edittext.xml" value="0.21614583333333334" />
-        <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/activity_chat.xml" value="0.18" />
-        <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/activity_chat.xml" value="0.25" />
+        <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/activity_login.xml" value="0.21" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/activity_profile_picture.xml" value="0.25" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/activity_voice_recorder.xml" value="0.18" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/fragment_chat_list.xml" value="0.12239583333333333" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/fragment_chats.xml" value="0.18" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/fragment_search.xml" value="0.12239583333333333" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/fragment_search_user.xml" value="0.18" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/item_users.xml" value="0.25" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/message_item.xml" value="0.22" />
-        <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/message_item_left.xml" value="0.19791666666666666" />
-        <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/message_item_right.xml" value="0.11979166666666667" />
+        <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/message_item_left.xml" value="0.5" />
+        <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/layout/message_item_right.xml" value="0.25" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/menu/drop_down_menu.xml" value="0.13229166666666667" />
         <entry key="..\:/Users/iuyar/AndroidStudioProjects/VoiceChat/app/src/main/res/menu/nav_menu.xml" value="0.1515625" />
       </map>

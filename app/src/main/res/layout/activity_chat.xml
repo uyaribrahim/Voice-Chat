@@ -11,7 +11,7 @@
         android:id="@+id/chatToolbar"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="@color/toolbar_background">
+        android:background="@color/teal_200">
 
         <ImageView
             android:id="@+id/userChatImage"
@@ -38,21 +38,21 @@
         android:id="@+id/chatRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/recorder"
+        android:layout_above="@id/relLayout"
         android:layout_below="@id/chatToolbar"
         android:scrollbarAlwaysDrawVerticalTrack="true"
         android:scrollbars="vertical" />
 
-    <ImageView
+    <!--<ImageView
         android:id="@+id/recorder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="52dp"
-        android:src="@drawable/ic_baseline_mic_24" />
+        android:src="@drawable/ic_baseline_mic_24" />-->
 
-    <EditText
+    <!--<EditText
         android:id="@+id/inputMessage"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -60,7 +60,34 @@
         android:layout_marginHorizontal="25dp"
         android:layout_marginBottom="5dp"
         android:backgroundTint="@color/black"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck" />-->
+    <RelativeLayout
+        android:id="@+id/relLayout"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:id="@+id/txtRecordingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="0:00"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtRecordingTime"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/mic_icon" />
+
+    </RelativeLayout>
     <ProgressBar
         android:id="@+id/sendingMessageProgress"
         android:layout_width="25dp"

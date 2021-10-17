@@ -99,7 +99,7 @@
             android:layout_marginTop="40dp"
             android:fontFamily="@font/boogaloo"
             android:textSize="16sp"
-            android:backgroundTint="@color/button_color"
+            android:backgroundTint="@color/teal_200"
             android:textColor="@color/white"
             android:text="@string/action_register" />
 
@@ -126,7 +126,7 @@
                 android:textSize="17sp"
                 android:fontFamily="@font/boogaloo"
                 android:layout_marginLeft="3dp"
-                android:textColor="@color/button_color"/>
+                android:textColor="@color/teal_200"/>
         </LinearLayout>
 
     <ProgressBar

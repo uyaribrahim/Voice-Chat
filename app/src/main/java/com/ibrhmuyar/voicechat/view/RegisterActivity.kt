@@ -1,30 +1,42 @@
 package com.ibrhmuyar.voicechat.view
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.messaging.FirebaseMessaging
+import com.ibrhmuyar.voicechat.notification.FirebaseService
 import com.ibrhmuyar.voicechat.R
 import com.ibrhmuyar.voicechat.viewmodel.AuthViewModel
 import kotlinx.android.synthetic.main.activity_register.*
 
 
 
-
+const val TOPIC = "/topics/myTopic2"
 class RegisterActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
     private lateinit var viewmodel : AuthViewModel
-
+    private lateinit var userToken : String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+
+        FirebaseService.sharedPref = getSharedPreferences("sharedPref", Context.MODE_PRIVATE)
+        FirebaseMessaging.getInstance().token.addOnCompleteListener {
+            FirebaseService.token = it.result
+            userToken = it.result.toString()
+            Log.e("6666",it.result.toString())
+        }
+        FirebaseMessaging.getInstance().subscribeToTopic(TOPIC)
 
         auth = FirebaseAuth.getInstance()
 
@@ -43,7 +55,7 @@ class RegisterActivity : AppCompatActivity() {
                 if(pass.length > 5){
                     if(pass == verifyPass){
                         progressLoading.visibility = View.VISIBLE
-                        viewmodel.register(email,pass,username)
+                        viewmodel.register(email,pass,username,userToken)
                     }else{
                         showToastMessage("Girdiğiniz şifreler birbiri ile eşleşmiyor")
                     }

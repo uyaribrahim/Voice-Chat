@@ -23,9 +23,9 @@ class AuthViewModel(): ViewModel() {
 
 
 
-    fun register(email: String, pass: String, username: String){
+    fun register(email: String, pass: String, username: String, userToken: String){
 
-        repository.signup(email,pass,username)
+        repository.signup(email,pass,username,userToken)
 
     }
 

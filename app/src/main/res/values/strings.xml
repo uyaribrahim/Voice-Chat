@@ -11,6 +11,7 @@
     <string name="title">Hesap Oluştur</string>
     <string name="already_a_member">Hesabın var mı? </string>
     <string name="no_account">Hesabın yok mu? </string>
+    <string name="find_friend">Hemen arkadaşlarını bul, \n yeni insanlarla tanış</string>
     <string name="reset_password">Reset password</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

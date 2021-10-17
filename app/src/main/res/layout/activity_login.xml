@@ -69,7 +69,7 @@
         android:layout_marginTop="25dp"
         android:fontFamily="@font/boogaloo"
         android:textSize="16sp"
-        android:backgroundTint="@color/button_color"
+        android:backgroundTint="@color/teal_200"
         android:textColor="@color/white"
         android:text="@string/action_sign_in" />
 
@@ -96,7 +96,7 @@
             android:textSize="17sp"
             android:layout_marginLeft="3dp"
             android:fontFamily="@font/boogaloo"
-            android:textColor="@color/button_color"/>
+            android:textColor="@color/teal_200"/>
     </LinearLayout>
 
 </LinearLayout>

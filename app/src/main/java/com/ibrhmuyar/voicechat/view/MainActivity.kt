@@ -2,16 +2,27 @@ package com.ibrhmuyar.voicechat.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.children
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
-import com.ibrhmuyar.voicechat.R
+import com.google.firebase.messaging.FirebaseMessaging
+import com.google.firebase.messaging.FirebaseMessagingService
+import com.google.gson.Gson
+import com.ibrhmuyar.voicechat.*
 import com.ibrhmuyar.voicechat.databinding.ActivityMainBinding
 import com.ibrhmuyar.voicechat.viewmodel.AuthViewModel
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import java.lang.Exception
+
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,12 +35,16 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         viewModel = ViewModelProviders.of(this).get(AuthViewModel::class.java)
 
 
+
         toolbar.setOnMenuItemClickListener {
+
             when(it.itemId){
                 R.id.itemLogout -> logout()
             };true
@@ -55,5 +70,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+    override fun onBackPressed() {
+        //super.onBackPressed()
+    }
+
+
 
 }

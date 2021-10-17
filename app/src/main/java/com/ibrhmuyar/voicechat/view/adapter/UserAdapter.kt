@@ -36,23 +36,19 @@ class UserAdapter (val userList: ArrayList<User>): RecyclerView.Adapter<UserAdap
 
         Glide.with(context)
             .load(userList[position].profileImgUrl)
-            .placeholder(R.drawable.place_holder)
             .circleCrop()
+            .placeholder(R.drawable.place_holder)
             .override(200,200)
             .into(holder.view.userImage)
-
-        if(position % 2 == 0){
-            holder.view.relativeLayout.setBackgroundColor(Color.parseColor("#C9D0CA"))
-        }else{
-            holder.view.relativeLayout.setBackgroundColor(Color.parseColor("#E8EFE9"))
-        }
 
         holder.view.userName.text = userList[position].userName
         holder.view.setOnClickListener {
             context.startActivity(Intent(this.context, ChatActivity::class.java)
                 .putExtra("userName", userList[position].userName)
                 .putExtra("uId", userList[position].userId)
-                .putExtra("imageUrl", userList[position].profileImgUrl))
+                .putExtra("imageUrl", userList[position].profileImgUrl)
+                .putExtra("userToken", userList[position].userToken))
+
         }
         /*holder.view.setOnClickListener(View.OnClickListener {
             context.startActivity(Intent(this.context,ChatActivity::class.java).putExtra("userName", userList[position].userName)

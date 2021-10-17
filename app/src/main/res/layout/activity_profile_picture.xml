@@ -65,7 +65,7 @@
         android:id="@+id/btnDone"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/button_color"
+        android:backgroundTint="@color/teal_200"
         android:text="BİTİR"
         android:textColor="@color/black"
         android:fontFamily="@font/boogaloo"
